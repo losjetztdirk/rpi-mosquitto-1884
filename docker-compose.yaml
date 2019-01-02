@@ -2,7 +2,7 @@ version: '2'
 
 services:
   server:
-    image: rpi-mosquitto:v0
+    image: seblaporte/rpi-domoticz:release-19.01
     ports:
       - 1883:1883
       - 8883:8883
