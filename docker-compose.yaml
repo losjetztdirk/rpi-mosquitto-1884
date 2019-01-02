@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  server:
+    image: rpi-mosquitto:v0
+    ports:
+      - 1883:1883
+      - 8883:8883
+    volumes:
+      - ./config:/mqtt/config:ro
+      - ./data:/mqtt/data:rw
