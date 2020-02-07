@@ -12,7 +12,7 @@ RUN [ "cross-build-end" ]
 
 RUN adduser --system --disabled-password --disabled-login mosquitto
 
-
+COPY config /mqtt/config
 VOLUME ["/mqtt/config", "/mqtt/data"]
 
 EXPOSE 1884 8884
