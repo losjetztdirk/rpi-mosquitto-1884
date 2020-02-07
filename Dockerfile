@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y mosquitto
 
 RUN [ "cross-build-end" ]
 
+RUN adduser --system --disabled-password --disabled-login mosquitto
+
+
 VOLUME ["/mqtt/config", "/mqtt/data"]
 
 EXPOSE 1884 8884
