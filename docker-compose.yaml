@@ -7,9 +7,9 @@ services:
           - "1884"
           - "8884"
         ports:
-          - 1884:1884
-          - 8884:8884
+          - "1884:1884"
+          - "8884:8884"
         image: losjetztdirk/rpi-mosquitto-1884
         volumes:
-          - ./config:/mqtt/config:rw
-          - ./data:/mqtt/data:rw
+          - ./config/:/mqtt/config/
+          - ./data/:/mqtt/data/
