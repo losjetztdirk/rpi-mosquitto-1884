@@ -13,3 +13,4 @@ services:
         volumes:
           - ./config/:/mqtt/config/
           - ./data/:/mqtt/data/
+        network_mode: bridge
