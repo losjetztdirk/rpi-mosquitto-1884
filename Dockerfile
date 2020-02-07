@@ -12,6 +12,6 @@ RUN [ "cross-build-end" ]
 
 VOLUME ["/mqtt/config", "/mqtt/data"]
 
-EXPOSE 1883 8883
+EXPOSE 1884 8884
 
 CMD /usr/sbin/mosquitto -c /mqtt/config/mosquitto.conf
