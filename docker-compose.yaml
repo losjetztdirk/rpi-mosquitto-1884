@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  mqtt-1884:
+    mqtt-1884:
         restart: always
         expose:
           - "1884"
@@ -9,7 +9,7 @@ services:
         ports:
           - 1884:1884
           - 8884:8884
-        image: losjetztdirk/rpi-mosquitto-1884:latest
+        image: losjetztdirk/rpi-mosquitto-1884
         volumes:
           - ./config:/mqtt/config:rw
           - ./data:/mqtt/data:rw
